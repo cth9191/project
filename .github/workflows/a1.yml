@@ -18,3 +18,5 @@ jobs:
       - name: Print Contests of Message File
         run: |
           cat message.txt
+      - name: echo message
+        run: echo "Did it work?"
