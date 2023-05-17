@@ -1,0 +1,20 @@
+---
+name: Message Workflow
+on:
+  push:
+    branches:
+      - master
+jobs:
+  message-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Message 
+        run: |
+          touch message.txt
+          echo "test" > message.txt
+      - name: Print Working Directory
+        run: |
+          pwd
+      - name: Print Contests of Message File
+        run: |
+          cat message.txt
